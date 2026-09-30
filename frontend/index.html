@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Padmavathi AI Assistant</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="page-bg">
+  <section class="chat-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">PE</div>
+        <div>
+          <h1 id="businessName">Padmavathi Embroidery Works & Boutiques</h1>
+          <div class="online"><span></span> AI Customer Assistant</div>
+        </div>
+      </div>
+      <button id="clearBtn" class="new-chat">＋ New Chat</button>
+    </header>
+
+    <div id="chat" class="chat-area"></div>
+
+    <div class="composer-area">
+      <div class="suggestions" id="suggestions">
+        <button>What products do you have?</button>
+        <button>What embroidery services do you provide?</button>
+        <button>What is your shop name and address?</button>
+        <button>How can I contact you?</button>
+      </div>
+      <form id="chatForm" class="composer">
+        <input id="message" autocomplete="off" placeholder="Ask about products, embroidery, prices, orders..." required>
+        <button type="submit">Send <span>➤</span></button>
+      </form>
+      <div class="whatsapp-row">
+        <a href="https://wa.me/919492015724" target="_blank" rel="noopener">💬 Chat on WhatsApp · 9492015724</a>
+      </div>
+      <div class="privacy-note">AI answers are based on the verified business information provided.</div>
+    </div>
+  </section>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>
