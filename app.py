@@ -27,7 +27,7 @@ DEFAULT_BUSINESS = {
     "name": "Padmavathi Embroidery Works & Boutiques",
     "description": "Computer embroidery and boutique services in Kadiri, Andhra Pradesh.",
     "phone": "9492015724",
-    "email": "",
+    "email": "jaiprakashpasham@gmail.com",
     "address": "College Rd, Revenue Colony, Kadiri, Andhra Pradesh 515591",
     "hours": "Open daily; listed closing time is 9:30 PM. Please confirm current hours before visiting.",
     "whatsapp": "9492015724"
@@ -146,9 +146,9 @@ def direct_answer(question, b):
     greetings = {"hello", "hi", "hey", "hai", "namaste", "good morning", "good afternoon", "good evening"}
     if q in greetings or any(q.startswith(g + " ") for g in greetings):
         return (f"Hello! 👋 Welcome to {b['name']}.\n\n"
-                "I can help with our embroidery services, products, DTF stickers, prices, "
-                "orders, address, phone number, WhatsApp and business hours.\n\n"
-                "What would you like to know?")
+                "How Can I Help You Today?\n\n"
+                ""
+                "")
 
     # Combined identity/contact query: name + phone + address/location.
     asks_name = has_any(q, ["shop name", "business name", "company name", "store name", "name of shop", "name of business"])
